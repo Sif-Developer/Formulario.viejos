@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario viejuner</title>
+</head>
+<body>
+    <header style="text-align:center ;" >
+        <h1>El club viejuner</h1>
+    </header>
+    <fieldset>
+        <legend><h3>TÚ</h3></legend>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name =apellido>
+        <br>
+        </p>
+        <p>
+            <strong>Sexo</strong>
+            <br>
+            <label for="sexo"></label>
+            <img src="https://images.vexels.com/media/users/3/144537/isolated/preview/da60837f2c2bae390caaf87f75e8d8d7-simbolo-femenino.png" width="18" height="18">
+            <input type="radio" id="sexo" name="sexo"  value="hembra"/> Mujer
+            <br>
+            <label for="sexo"></label>
+            <img src="https://images.vexels.com/media/users/3/144540/isolated/lists/c5a58b83a85c6bf12fe6efe72cf06e67-simbolo-masculino.png" width="18" height="18">
+            <input type="radio" id="sexo" name="sexo"  value="macho"/> Hombre
+        </p>
+        <p>
+            Me siento viejuner:    <br/>
+            <input type="checkbox" name="viejo"/>Sí<br/>
+            <input type="checkbox" name="joven"/>No<br/>
+        </p>
+        <p>
+            Sobre ti:<br/>
+            <textarea name="comentario: " rows="10" cols="30" placeholder="Escribe algo sobre tí"></textarea></p>
+        </p>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend><h3>TUS CIRCUNSTANCIAS</h3></legend>
+        <p>
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" width="15" height="15"> 
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="sif2.0@gmail.com" required/><br>
+              <br>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png" width="15" height="15">
+             <label for="number">Número:</label>
+            <input type="number" name="number" id="number" placeholder="Número de teléfono"><br>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend><h3>LOS LANDRONZUELOS DE BICICLETAS</h3></legend>
+        <label for="date">Fecha</label>
+        Día: <input type="date" name="date" id="date"> 
+        <label for="time">Hora</label>
+        <input type="time" id="time" name="time">
+        <p>
+        <label for="color">Color de la bicicleta=</label>
+        <input type="color" id=color name="color" value="000000"><br>
+
+        <label for="marca">¿De qué marca era la bici?:</label>
+        <input list="marcas" name="marca" id="marca" >
+        <datalist id="marcas">
+            <option value="specializede">
+            <option value="trek">
+            <option value="merida">
+            <option value="scott">
+            <option value="giant">
+            <option value="cube">
+            <option value="lapierre">
+            <option value="orbea">
+            <option value="cannodale">
+            <option value="bmc">
+            <option value="bmc">
+            <option value="canyon">
+            <option value="look">
+            <option value="protek">
+            <option value="megamo">
+            <option value="pinarello">
+            <option value="bh">
+            <option value="factor">
+            <option value="ghost">
+            <option value="cervélo">
+            <option value="argon">
+        </datalist>
+>
+        <br>
+        <label for="precio">Rango de precios: 0</label>
+        <input type="range" id="precio" name="precio" step="10" min="0" max="500"> 500 <br>
+        <br>
+        <label for="bici">Tipo de bicicleta:</label>
+        <input type="checkbox" name="paseo"/><strong>Paseo</strong>                                 
+            <input type="checkbox" name="montaña"/><strong>Montaña</strong>
+            <input type="checkbox" name="montaña"/><strong>Carreras</strong>
+        <select name="bici">
+            <option disabled>Selecciona una opción</option>
+            <option>Señorial</option>
+            <option>Anti-plebeyeos</option>
+            <option>PorEncimaDelHombro</option>
+            <option>Gamusinos</option>
+            <option>Hueleflores premium</option>
+            <option>Fango lover</option>
+            <option>Metorymedio</option>
+            <option>3 de la Tarde. Fluorescente edition</option>
+            <option>Grupitors</option>
+          </select></p>
+          <br>
+        <label for="marca">Accesorios:</label>
+        <select name="marca" id="marca">
+        <option>Ruedines</option>
+        <option>Pegatinas</option>
+        <option>Cestita</option>
+        <option>Bomba de Aire</option>
+        <option >Timbre</option>
+        <option>Foco</option>
+    </fieldset>
+    <fieldset>
+        <legend>Comenzar de nuevo</legend>
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Comenzar de nuevo</legend>
+            <p>Borrar todos los datos del formulario y volver a empezar:
+               <input type="reset" value="borrar todo"/>
+            </p>
+            </fieldset>
+            <fieldset>
+            Pulse abajo para envíar por correo electrónico<br>
+            <input type="submit" value="Enviar por correo"/>
+            <p>Pulse abajo para reiniciar formulario <br>
+            <input type="reset" value="borrar todo"/
+
+            </fieldset>
+
+</body>
+</html>
